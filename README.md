@@ -2,8 +2,10 @@
 PUB-SUB using ZeroMQ, used Redis to persist tasks/messages.
 
 Simulation -
+![alt text](https://github.com/suyash248/pub-sub-persistable/blob/master/static/img/pubsub_simulation.gif "Pub-Sub simulation")
 
-![alt text](https://github.com/suyash248/pub-sub-persistable/blob/master/static/simulation.png "Pub-Sub simulation")
+Preview -
+![alt text](https://github.com/suyash248/pub-sub-persistable/blob/master/static/img/pubsub_preview.png "Pub-Sub simulation")
 
 # Requirements
 - Redis
