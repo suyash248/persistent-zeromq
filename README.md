@@ -1,4 +1,4 @@
-# pub-sub-persistable
+# Publisher Subscriber
 PUB-SUB using ZeroMQ, used Redis to support reliable(persistence) tasks.
 
 Simulation -
