@@ -14,8 +14,6 @@ def connect(host="*", port=5555):
     return pub
 
 def publish(topic, msg):
-    print ("{} {}".format(topic, msg))
-
     msg_id = str(uuid.uuid4())
     MSG.write_msg(topic, msg_id, msg)
 
