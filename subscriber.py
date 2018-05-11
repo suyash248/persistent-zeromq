@@ -50,5 +50,5 @@ def subscribe(port, topic):
 if __name__ == "__main__":
     sub_id = input("Enter subscriber id(alphanumeric): ")
     port = int(input("Enter port: "))
-    topic = input("Enter topic name: ")
+    topic = input("Enter topic name to subscribe to: ")
     subscribe(port, topic)
