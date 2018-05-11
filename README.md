@@ -29,6 +29,7 @@ $ python subscriber.py
 
 # Features
 - Traditional Publisher-Subscriber model.
-- Publisher can specify TTL(Time-to-live) while publishing a message to particular topic.
+- Publisher can specify TTL(Time-to-live) while publishing a message to particular topic. So a message(with ttl = t secconds)
+will expire after `t` seconds.
 - A message is published on a topic(T) will be delivered to each subscriber of that topic(T) exactly once.
 - If a subscriber goes down for a duration(D), then all the pending messages(with TTL > D) will be delivered to that subscriber once it comes back alive after duration(D).
