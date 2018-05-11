@@ -35,8 +35,9 @@ def subscribe(port, topics=[]):
     sub.connect("tcp://localhost:{}".format(port))
 
     topics.extend(settings.GLOBAL_TOPICS)
+    topics = list(map(lambda t: t.strip(), topics))
     for topic in topics:
-        sub.setsockopt(zmq.SUBSCRIBE, topic.strip().encode())
+        sub.setsockopt(zmq.SUBSCRIBE, topic.encode())
 
     process_pending_msgs(*topics)
 
