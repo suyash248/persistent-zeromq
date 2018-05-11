@@ -33,6 +33,7 @@ $ python subscriber.py
 
 # Features
 - Traditional Publisher-Subscriber model.
+- A subscriber can subscribe to multiple topics.
 - Publisher can specify `TTL`(Time-to-live) while publishing a message to particular topic. So a message(with `ttl = t secconds`)
 will expire after `t` seconds.
 - A message is published on a topic(`T`) will be delivered to each subscriber of that topic(`T`) exactly once.
