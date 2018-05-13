@@ -31,10 +31,12 @@ and subscriber(s) can be started as -
 $ python subscriber.py
 ```
 
-# Features
+# Insights
 - Traditional Publisher-Subscriber model.
 - A subscriber can subscribe to multiple topics. Each subscriber is identified by unique id(alphanumeric).
 - Publisher can specify `TTL`(Time-to-live) while publishing a message to particular topic. So a message(with `ttl = t secconds`)
 will expire after `t` seconds.
 - A message is published on a topic(`T`) will be delivered to each subscriber of that topic(`T`) exactly once.
 - If a subscriber goes down for a duration(`D`), then all the pending messages(with `TTL > D`) will be delivered to that subscriber once it comes back alive after duration(`D`).
+- Publisher & subscriber(s) needs to connect to Redis.
+- Each & every subscriber must be assigned a unique id.
