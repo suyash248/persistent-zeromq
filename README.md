@@ -1,4 +1,4 @@
-# Publisher Subscriber (ZeroMQ + Redis)
+# Persistent pub-sub model using - ZeroMQ + Redis
 PUB-SUB using ZeroMQ, used Redis to persist tasks/messages.
 
 #### Simulation -
